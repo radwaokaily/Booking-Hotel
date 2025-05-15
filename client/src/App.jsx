@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './componts/Navbar/Navbar'
 import {Route, Routes, useLocation} from 'react-router-dom'
 import Home from './pages/Home'
+import Footer from './componts/footer/Footer'
 function App() {
 
   //check the user role to deside which Navbar should display
@@ -14,9 +15,8 @@ function App() {
           <Route path='/' element={<Home/>}/>
         </Routes>
 
-      </div>
-     <h1>Hello</h1>
-        
+      </div>   
+      <Footer/>     
    </>
   )
 }
